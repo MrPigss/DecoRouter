@@ -59,7 +59,7 @@
 FastApi is a great tool for developping API's in a quick and easy way. In their own words:
 >FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
-It is build using starlette wich is in their own words:
+It is build using starlette which is in their own words:
 >a lightweight ASGI framework/toolkit, which is ideal for building high performance asyncio services.
 
 
@@ -67,7 +67,7 @@ It is build using starlette wich is in their own words:
 
 One of the things that I love about FastAPI is how easy it is to setup different routes. Just use a decorator above the function that corresponds to that route and done.
 [![FastAPI Screen Shot][FastAPI-screenshot]](./images/FastAPI.png)
-It's easy to see wich route corresponds to wich function and vice versa.
+It's easy to see which route corresponds to which function and vice versa.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -76,7 +76,7 @@ It's easy to see wich route corresponds to wich function and vice versa.
 In starlette you first declare different functions and then at the end of the file you map the path, allowed HTTP methods and endpoint function together.
 [![starlette Screen Shot][starlette-screenshot]](./images/Starlette.png)
 
-This makes it easy to make mistakes as there is not way to immediatly know wich endoint corresponds to a certain function, unless you go look in the routes at the end of the file. They might not even be declared in that file at all.
+This makes it easy to make mistakes as there is no way to immediately know which endoint corresponds to a certain function, unless you check the routes at the end of the file. They might not even be declared in that file at all.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ _For more info regarding starlette, please refer to the [Documentation](https://
 
 ### Example
 below is a basic example.  
-There is one endpoint '`/`' wich only accepts `GET` requests, and returns `{'hello': 'world'}`.
+There is one endpoint '`/`' which only accepts `GET` requests, and returns `{'hello': 'world'}`.
 * example.py:
 
 ```python
@@ -130,7 +130,7 @@ $ uvicorn example:app
 
 ### Multiple HTTP methods
 It's also possible to accept multiple HTTP methods for one endpoint.  
-Below you can see one endpoint '`/`' wich accepts both `POST` and `PUT` requests.
+Below you can see one endpoint '`/`' which accepts both `POST` and `PUT` requests.
 
 ```python
 from starlette.applications import Starlette
