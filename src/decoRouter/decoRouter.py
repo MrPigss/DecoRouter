@@ -24,6 +24,8 @@ class Router:
         return decorator
 
     def __getattribute__(self, item: str):
+        if item.upper() == 'GET':
+            Router.method('HEAD')
         return Router.method(item)
 
     @staticmethod
