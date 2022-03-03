@@ -1,6 +1,7 @@
 <div id="top"></div>
 
 [![Issues][issues-shield]][issues-url]
+![black][black-shield]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -12,7 +13,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h2 align="center">DecoRouter</h3>
+  <h2 align="center">starlette_decoRouter</h3>
 
   <p align="center">
     A FastAPI style router for Starlette.
@@ -82,7 +83,7 @@ This makes it easy to make mistakes as there is no way to immediately know which
 
 ### The best of both
 
-DecoRouter auto generates your routes for you based on decorators, just like FastAPI. The downside is that you have to import an extra module, but the added bonus of easier to read and maintain code is certainly worth it.
+decoRouter auto generates your routes for you based on decorators, just like FastAPI. The downside is that you have to import an extra module, but the added bonus of easier to read and maintain code is certainly worth it.
 [![decoRouter Screen Shot][decoRouter-screenshot]](./images/DecoRouter.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -234,6 +235,9 @@ Apparently starlette still supports using decorators but these are not documente
 
 [linkedin-url]: https://www.linkedin.com/in/thomas-eeckhout-761500181/
 [linkedIn-shield]: https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat
+
+
+[black-shield]: https://img.shields.io/badge/code%20style-black-000000.svg
 
 [decoRouter-screenshot]: images/DecoRouter.png
 [starlette-screenshot]: images/Starlette.png

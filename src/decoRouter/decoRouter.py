@@ -1,35 +1,36 @@
 from starlette.routing import Route
 
+
 class Router:
     """decorator factory that generates paths for starlette with the use of decorators.
 
     Yields:
         Route: starlette Route objects
     """
-    _routes = {}
 
-    @staticmethod
-    def method(name):
+    def __init__(self) -> None:
+        self._routes = {}
+
+    def method(self, name):
         def decorator(path: str = None):
             def inner(func):
                 fname = func.__name__
-                if fname in Router._routes:
-                    Router._routes[fname].methods.add(name.upper())
+                if fname in self._routes:
+                    self._routes[fname].methods.add(name.upper())
                 else:
-                    Router._routes[fname] = Route(path, func, methods = [name])
+                    self._routes[fname] = Route(path, func, methods=[name])
 
                 return func
 
             return inner
+
         return decorator
 
-    def __getattribute__(self, item: str):
-        if item.upper() == 'GET':
-            Router.method('HEAD')
-        return Router.method(item)
+    def __getattr__(self, item: str):
+        if item.upper() == "GET":
+            self.method("HEAD")
+        return self.method(item)
 
-    @staticmethod
-    def __iter__():
-        for route in (r:=Router._routes):
+    def __iter__(self):
+        for route in (r := self._routes):
             yield r[route]
-
