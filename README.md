@@ -8,11 +8,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/MrPigss/DecoRouter">
+  <!-- <a href="https://github.com/MrPigss/DecoRouter">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-  <h3 align="center">DecoRouter</h3>
+  <h2 align="center">DecoRouter</h3>
 
   <p align="center">
     A FastAPI style router for Starlette.
