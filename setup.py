@@ -7,11 +7,11 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 setup(
     name='decoRouter',
-    version='1.0',
+    version='1.0.0',
     description='FastAPI style decorators for starlette ASGI',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/pypa/sampleproject',
+    url='https://github.com/MrPigss/DecoRouter',
     author="Thomas Eeckhout",
     author_email="Thomas.Eeckhout@outlook.be",
     classifiers=[
