@@ -215,7 +215,8 @@ Thank you
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+## PS.
+Apparently starlette still supports using decorators but these are not documented anywhere since they are deprecated since 0.13.0, see [changelog][changelog].
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -237,3 +238,5 @@ Thank you
 [decoRouter-screenshot]: images/DecoRouter.png
 [starlette-screenshot]: images/Starlette.png
 [FastAPI-screenshot]: images/FastAPI.png
+
+[changelog]: https://www.starlette.io/release-notes/#:~:text=memory%20upload%20files.-,0.13.0,style%20in%20favour%20of%20declarative%20routing%20tables%20and%20middleware%20definitions.,-0.12.12
