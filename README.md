@@ -4,7 +4,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -74,8 +73,6 @@ It is build using starlette wich is in their own words:
 
 ### The good
 
----
-
 One of the things that I love about FastAPI is how easy it is to setup different routes. Just use a decorator above the function that corresponds to that route and done.
 [![FastAPI Screen Shot][FastAPI-screenshot]](./images/FastAPI.png)
 It's easy to see wich route corresponds to wich function and vice versa.
@@ -84,18 +81,14 @@ It's easy to see wich route corresponds to wich function and vice versa.
 
 ### The less good
 
----
-
 In starlette you first declare different functions and then at the end of the file you map the path, allowed HTTP methods and endpoint function together.
-[![scarlette Screen Shot][starlette-screenshot]](./images/scarlette.png)
+[![starlette Screen Shot][starlette-screenshot]](./images/starlette.png)
 
 This makes it easy to make mistakes as there is not way to immediatly know wich endoint corresponds to a certain function, unless you go look in the routes at the end of the file. They might not even be declared in that file at all.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### The best of both
-
----
 
 DecoRouter auto generates your routes for you based on decorators, just like FastAPI. The downside is that you have to import an extra module, but the added bonus of easier to read and maintain code is certainly worth it.
 [![decoRouter Screen Shot][decoRouter-screenshot]](./images/DecoRouter.png)
@@ -120,7 +113,7 @@ You can install the module using pip.
 To use decoRouter you will need to know how starlette works.
 decoRouter will not create an app for you, it will only generate the routes.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more info regarding starlette, please refer to the [Documentation](https://www.starlette.io/)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,14 +141,17 @@ Thank you
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat
+[contributors-url]: https://github.com/MrPigss/DecoRouter/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat
+[forks-url]: https://github.com/MrPigss/DecoRouter/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat
+[stars-url]: https://github.com/MrPigss/DecoRouter/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat
+[issues-url]: https://github.com/MrPigss/DecoRouter/issues
 
 [linkedin-url]: https://www.linkedin.com/in/thomas-eeckhout-761500181/
 [linkedIn-shield]: https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat
