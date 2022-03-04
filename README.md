@@ -91,7 +91,7 @@ decoRouter auto generates your routes for you based on decorators, just like Fas
 
 ## Installation
 You can simply install the module using pip.
-* `> pip install starlette_decorouter`
+* `> pip install starlette-decoRouter`
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
