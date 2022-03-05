@@ -57,7 +57,7 @@
 
 <!-- [![decoRouter Screen Shot][decoRouter-screenshot]](./images/DecoRouter.png) -->
 
-FastApi is a great tool for developping API's in a quick and easy way. In their own words:
+FastApi is a great tool for developing APIs in a quick and easy way. In their own words:
 >FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 It is build using starlette which is in their own words:
